@@ -1,0 +1,14 @@
+{
+  "source": "komikpedia",
+  "baseUrl": "https://www.comic.komikpedia.com",
+  "note": "Komikpedia = Blogger. List + search via feed JSON (stabil). HTML cuma buat gambar chapter.",
+  "feeds": {
+    "recent": "/feeds/posts/summary?alt=json&max-results=25",
+    "search": "/feeds/posts/default?q={q}&alt=json&max-results=10",
+    "seriesChapters": "/feeds/posts/summary/-/{label}?alt=json&max-results=150&start-index={start}",
+    "seriesDetail": "/feeds/posts/default/-/{label}?alt=json&max-results=10"
+  },
+  "metaLabels": ["Chapter", "Project", "Series", "Update"],
+  "chapterImageSelector": ".check-box .separator img",
+  "series": { "label": "Lookism", "title": "Lookism" }
+}
